@@ -10,16 +10,16 @@ describe "author listing page" do
         end
     end
 
-    # context "there are books" do
+    context "there are books" do
 
-    #     before do
-    #         Book.create(title: "Snowcrash")
-    #     end
+        before do
+            Author.create(name: "Stephenson")
+        end
 
-    #     it "should show the title" do
-    #         visit "/books"
-    #         expect(page).to have_content "Snowcrash"
-    #     end
-    # end
+        it "should show the name" do
+            visit "/authors"
+            expect(page).to have_content "Stephenson"
+        end
+    end
 
 end
