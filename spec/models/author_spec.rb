@@ -3,8 +3,8 @@ require 'rails_helper'
 context "Author" do 
 
 	it "has a name" do
-		author = Author.create(name: "Tolkin")
-		expect(author.name).to eq "Tolkin"
+		author = Author.create(name: "Tolkein")
+		expect(author.name).to eq "Tolkein"
 	end
 
 	it "has a book" do
@@ -13,7 +13,7 @@ context "Author" do
 	end
 
 	it "can have more than one book" do
-		author = Author.create(name: "Tolkin")
+		author = Author.create(name: "Tolkein")
 		book_1 = Book.create(title: "The Hobbit")
 		book_2 = Book.create(title: "Lord of the Rings")
 		expect(author.books.count).to eq 0
