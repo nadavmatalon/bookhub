@@ -46,13 +46,10 @@ body {
 
 .main-title {
 	position: fixed;
-	font-family: "Gotham Narrow SSm",sans-serif,Arial;
-	font-size: 24px;
 	border: 1px solid rgb(150, 150, 150);
 	height: 80px;
 	width: 100%;
 	text-align: center;
-	line-height: 15px;
 	top: 46px;
 	margin-top: 46px;
 	margin-left: 0px;
@@ -61,6 +58,15 @@ body {
 	z-index: 1000;
 }
 
-
+.main-title > p {
+	position: relative;
+	font-family: "Gotham Narrow SSm",sans-serif;
+	font-size: 50px;
+	font-weight: 900;
+	top: 15px;
+	width: 100%;
+	letter-spacing: 1px;
+	z-index: 1000;
+}
 
 
