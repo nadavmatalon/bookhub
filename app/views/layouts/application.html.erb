@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Bookhub</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  	<title>Bookhub</title>
+	  	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+	  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  	<%= csrf_meta_tags %>
+	</head>
+	<body>
 
-<%= yield %>
+		<div class="nav-bar">
+		</div>
 
-</body>
+		<div class="main-title">
+			<h1>BookHub</h1>
+		</div>
+
+		<%= yield %>
+
+	</body>
 </html>
