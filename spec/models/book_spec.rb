@@ -14,15 +14,15 @@ context "Book" do
 
 	it "can have more than one author" do
 		book = Book.create(title: "The Hobbit")
-		author_1 = Author.create(name: "Tolkin")
-		author_2 = Author.create(name: "Tolkin_2")
+		author_1 = Author.create(name: "Tolkein")
+		author_2 = Author.create(name: "Tolkein_2")
 		expect(book.authors.count).to eq 0
 		book.authors << author_1
 		expect(book.authors.count).to eq 1
 		book.authors << author_2
 		expect(book.authors.count).to eq 2
-		expect(book.authors.first.name).to eq "Tolkin"
-		expect(book.authors.second.name).to eq "Tolkin_2"
+		expect(book.authors.first.name).to eq "Tolkein"
+		expect(book.authors.second.name).to eq "Tolkein_2"
 	end
 
 	it "has a year of publication" do
