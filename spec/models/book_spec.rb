@@ -25,4 +25,21 @@ context "Book" do
 		expect(book.authors.second.name).to eq "Tolkin_2"
 	end
 
+	it "has a year of publication" do
+		book = Book.create(title: "The Hobbit", publication_year: "1937")
+		expect(book.publication_year).to eq "1937"
+	end
+
+	it "has its year of publication set to 0 by default if no value given" do
+		book = Book.create(title: "The Hobbit")
+		expect(book.publication_year).to eq "0"
+	end
+
+
 end
+
+
+
+
+
+
