@@ -3,13 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .main-body {
-	display: flex;
-	display: -webkit-flex;
-	justify-content: center;
-	-webkit-flex-direction: row; 
-   	flex-direction: row;
-   	-webkit-justify-content: center;
-   	justify-content: center;
+	display: -webkit-flexbox;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+  	-webkit-flex-align: center;
+  	-ms-flex-align: center;
+  	-webkit-align-items: center;
+  	align-items: center;
+	-webkit-flex-direction: column; 
+   	flex-direction: column;
 	width: 100%;
 	height: 1000px;
 	top: 120px;
@@ -23,10 +26,68 @@
 
 .page_sub_title {
 	position: relative;
+	order: 1;
 	top: 0;
 	left: 0;
 	font-family: "Gotham Narrow SSm",sans-serif,Arial;
 	font-size: 20px;
+}
+
+.search-box-container {
+	order: 2;
+	background-color: rgb(220, 220, 220);
+	width: 500px;
+	height: 150px;
+	border: 1px solid rgb(170, 170, 170);
+	border-radius: 7px;
+}
+
+#search-box {
+	position: relative;
+	top: 52px;
+	left: 30px;
+	width: 310px;
+	height: 40px;
+	font-family: "Gotham Narrow SSm",sans-serif,Arial;
+	font-size: 18px;
+	padding-left: 7px;
+	outline: none;
+	box-shadow: none;
+}
+
+#search-button {
+	position: relative;
+	top: 51px;
+	left: 51px;
+	padding: 5px; 
+	border: 1px solid rgb(100, 100, 100); 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 100px;
+	height: 35px;
+	line-height: 10px;	
+	font-family: "Gotham Narrow SSm",sans-serif,Arial;
+	font-size: 16px;
+	outline: none;
+	box-shadow: none;
+}
+
+#search-button:hover {
+	position: relative;
+	top: 51px;
+	left: 51px;
+	padding: 5px; 
+	border: 1px solid rgb(100, 100, 100); 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 100px;
+	height: 35px;
+	line-height: 10px;	
+	font-family: "Gotham Narrow SSm",sans-serif,Arial;
+	font-size: 16px;
+	outline: none;
+	box-shadow: none;
+	color: blue;
 }
 
 
