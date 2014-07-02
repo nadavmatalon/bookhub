@@ -10,7 +10,7 @@ describe "author listing page" do
         end
     end
 
-    context "there are books" do
+    context "there are authors" do
 
         before do
             Author.create(name: "Stephenson")
