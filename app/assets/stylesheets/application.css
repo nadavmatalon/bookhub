@@ -55,6 +55,16 @@ body {
 	z-index: 1000;
 }
 
+.second-white-space {
+	position: fixed;
+	top: 174px;
+	left: 0px;
+	width: 100%;
+	height: 80px;
+	background-color: white;
+	z-index: 1000;
+}
+
 .main-title {
 	position: fixed;
 	border: 1px solid rgb(150, 150, 150);
@@ -230,6 +240,16 @@ body {
 	margin-left: 15px;
 	font-size: 16px;
 }
+
+.feedback {
+	position: fixed;
+	width: 300px;
+	height: 100px;
+	margin-top: 15px;
+	margin-left: 300px;
+	font-size: 16px;
+}
+
 
 
 

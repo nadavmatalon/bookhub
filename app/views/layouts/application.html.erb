@@ -12,7 +12,14 @@
 
 		<div class="nav-bar">
 		
-			<div class="messages">					
+			<div class="messages">
+				<% if user_signed_in? %>
+					<span class="user-message"><%= "Welcom, #{current_user.email}" %></span><br/>
+				<% else %>
+						<span class="user-message"><%= "Welcom, please sign-up or log-in" %></span><br/>		
+				<% end %>				
+			</div>
+			<div class="feedback">	
 				<span class="notice"><%= notice %></span>
 				<span class="alert"><%= alert %></span>
 			</div>
@@ -39,8 +46,6 @@
 					
 			</div>
 
-
-
 		</div>
 
 		<div class="white-space">
@@ -50,6 +55,8 @@
 			<p>BookHub</p>
 		</div>
 
+		<div class="second-white-space">
+		</div>
 
 			<%= yield %>
 
