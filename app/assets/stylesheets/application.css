@@ -16,10 +16,21 @@
 
 body {
 	margin: 0px;
+	background-color: white;
 }
 
 .nav-bar {
 	position: fixed;
+	display: -webkit-flexbox;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+  	-webkit-flex-align: center;
+  	-ms-flex-align: center;
+  	-webkit-align-items: center;
+  	align-items: center;
+	-webkit-flex-direction: row; 
+   	flex-direction: row;
 	width: 100%;
 	height: 46px;
 	top: 0;
@@ -69,38 +80,175 @@ body {
 	z-index: 1000;
 }
 
-.main-content {
-	width: 580px;
-	float: right;
-	margin-top: 0px;
+.user-session-control {
+	position: relative;
+	width: 750px;
 	padding-top: 0px;
 	z-index: 1010;
-	background-color: darkgrey;
 	font-size: 14px;
-	margin-top: 11px;
+	margin-left: 530px;
+
 }
 
-.main-content button {
-	padding: 5px; 
-	border: 1px solid rgb(100, 100, 100); 
-	-webkit-border-radius: 5px;
+.log-in-button {
+	position: relative;
+	width: 284px;
+	height: 100px;
+	margin-top: 5px;
+	margin-left: 15px;
 	border-radius: 5px;
-	width: 100px;
-	height: 35px;
-	line-height: 10px;	
+	-webkit-border-radius: 5px;
+	border: 1px solid black;
+	padding-left: 2px;
+	padding-right: 6px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: rgb(200, 200, 200);
+}
+
+#log-in {
+	background-color: transparent;
+	outline-style: none;
+	width: 31px;
+	height: 20px;
+	border-radius: 5px;
+	box-sizing: inherit;
+	margin-left: 11px;
+	margin-right: 6px;
 	font-family: "Gotham Narrow SSm",sans-serif,Arial;
-	font-size: 16px;
-	outline: none;
+	font-size: 12px;
+	border: none;
+	text-align: center;
+	color: black;
+}
+
+#log-in:hover {
+	background-color: transparent;
+	outline-style: none;
+	width: 31px;
+	height: 20px;
+	border-radius: 5px;
+	box-sizing: inherit;
+	margin-left: 11px;
+	margin-right: 6px;
+	font-family: "Gotham Narrow SSm",sans-serif,Arial;
+	font-size: 12px;
+	border: none;
+	text-align: center;
+	color: blue;
+}
+
+.sign-up-button {
+	position: relative;
+	width: 284px;
+	height: 100px;
+	margin-top: 5px;
+	margin-left: 15px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid black;
+	padding-left: 11px;
+	padding-right: 12px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: rgb(200, 200, 200);
+}
+
+.sign-up {
+	position: relative;
+	font-family: "Gotham Narrow SSm",sans-serif,Arial;
+	font-size: 12px;
+	text-decoration: none;
 	box-shadow: none;
+	border: none;
+	color: black;
+	line-height: -1px;
+	top: -1px;
 }
 
-.notice {
+.sign-up:hover {
+	position: relative;
+	font-family: "Gotham Narrow SSm",sans-serif,Arial;
+	font-size: 12px;
+	text-decoration: none;
+	box-shadow: none;
+	border: none;
+	color: black;
+	line-height: -1px;
+	top: -1px;
+	color: blue;
+}
 
+
+.log-out-button {
+	position: relative;
+	width: 284px;
+	height: 100px;
+	margin-top: 5px;
+	margin-left: 15px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid black;
+	padding-left: 11px;
+	padding-right: 12px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: rgb(200, 200, 200);
+}
+
+.log-out {
+	position: relative;
+	font-family: "Gotham Narrow SSm",sans-serif,Arial;
+	font-size: 12px;
+	text-decoration: none;
+	box-shadow: none;
+	border: none;
+	color: black;
+	line-height: -1px;
+	top: -1px;
+
+}
+
+.log-out:hover {
+	position: relative;
+	font-family: "Gotham Narrow SSm",sans-serif,Arial;
+	font-size: 12px;
+	text-decoration: none;
+	box-shadow: none;
+	border: none;
+	color: black;
+	line-height: -1px;
+	top: -1px;
+	color: blue;
+}
+
+.messages {
+	position: fixed;
+	width: 300px;
+	height: 100px;
+	margin-top: 15px;
+	margin-left: 15px;
+	font-size: 16px;
+}
+
+
+
+.sign-up-container {
+	float: left;
+	position: fixed;
+	width: 300px;
+	height: 100px;
+	margin-top: 200px;
+	margin-left: 15px;
+	font-size: 16px;
 
 }
 
 
-.alert {
 
 
-}
+
+
+
+
+

@@ -3,6 +3,7 @@
 	<head>
 	  	<title>Bookhub</title>
 	  	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+	
 	  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 	  	<%= csrf_meta_tags %>
@@ -10,33 +11,35 @@
 	<body>
 
 		<div class="nav-bar">
-
-			<div>					
-				<p class="notice"><%= notice %></p>
-				<p class="alert"><%= alert %></p>
+		
+			<div class="messages">					
+				<span class="notice"><%= notice %></span>
+				<span class="alert"><%= alert %></span>
 			</div>
 
-			<nav class='main-content'>
+			<div class="user-session-control">
 
 				<%= form_for(User.new, as: :user, url: session_path(:user)) do |f| %>
-				  	
-				  	<div>
-				  		<%= f.label :email %>
-
-				  		<%= f.email_field :email %>
-
-				  		<%= f.label :password %>
-
-				    	<%= f.password_field :password, autocomplete: "off" %>
-
-				    	<%= f.check_box :remember_me %> <%= f.label :remember_me %>
-
-				  		<%= f.submit "Sign in" %>
-				  	</div>
-
+			  		<%= f.label :email %>
+			  		<%= f.email_field :email %>
+			  		<%= f.label :password %>
+			    	<%= f.password_field :password, autocomplete: "off" %>
+			    	<%= f.check_box :remember_me %> 
+			    	<%= f.label :remember_me %>
+			    	<span class="log-in-button">
+			  		<%= f.submit "Log in", id: "log-in" %>
+			  		</span>
+			  		<span class="sign-up-button">
+			  		<%= link_to "Sign up", new_user_registration_path, class: "sign-up" %>
+			  		</span>
+			  		<span class="log-out-button">
+					<%= link_to "Log out", destroy_user_session_path, method: :delete, class: "log-out" %>
+					</span>
 				<% end %>
 					
-			</nav>
+			</div>
+
+
 
 		</div>
 

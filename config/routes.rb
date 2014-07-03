@@ -3,8 +3,8 @@ Rails.application.routes.draw do
  root to: 'home#index'
 
  devise_for :users 
-
- resources :books, :authors
+ 
+ resources :users, :books, :authors
 
  
   # The priority is based upon order of creation: first created -> highest priority.
