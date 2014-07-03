@@ -69,4 +69,38 @@ body {
 	z-index: 1000;
 }
 
+.main-content {
+	width: 580px;
+	float: right;
+	margin-top: 0px;
+	padding-top: 0px;
+	z-index: 1010;
+	background-color: darkgrey;
+	font-size: 14px;
+	margin-top: 11px;
+}
 
+.main-content button {
+	padding: 5px; 
+	border: 1px solid rgb(100, 100, 100); 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 100px;
+	height: 35px;
+	line-height: 10px;	
+	font-family: "Gotham Narrow SSm",sans-serif,Arial;
+	font-size: 16px;
+	outline: none;
+	box-shadow: none;
+}
+
+.notice {
+
+
+}
+
+
+.alert {
+
+
+}

@@ -10,6 +10,34 @@
 	<body>
 
 		<div class="nav-bar">
+
+			<div>					
+				<p class="notice"><%= notice %></p>
+				<p class="alert"><%= alert %></p>
+			</div>
+
+			<nav class='main-content'>
+
+				<%= form_for(User.new, as: :user, url: session_path(:user)) do |f| %>
+				  	
+				  	<div>
+				  		<%= f.label :email %>
+
+				  		<%= f.email_field :email %>
+
+				  		<%= f.label :password %>
+
+				    	<%= f.password_field :password, autocomplete: "off" %>
+
+				    	<%= f.check_box :remember_me %> <%= f.label :remember_me %>
+
+				  		<%= f.submit "Sign in" %>
+				  	</div>
+
+				<% end %>
+					
+			</nav>
+
 		</div>
 
 		<div class="white-space">
@@ -19,10 +47,8 @@
 			<p>BookHub</p>
 		</div>
 
-		<p class="notice"><%= notice %></p>
-		<p class="alert"><%= alert %></p>
-		
-		<%= yield %>
+
+			<%= yield %>
 
 	</body>
 </html>
